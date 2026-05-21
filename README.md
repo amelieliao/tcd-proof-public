@@ -2,7 +2,7 @@
 
 TCD Proof is a trusted control plane for governed, quantified, and externally verifiable AI inference.
 
-This public repository contains redacted demo materials, sample receipt artifacts, verification summaries, and reviewer-facing Quickstart documentation for understanding the TCD Proof full-chain receipt path.
+Redacted demo artifacts for inspecting the TCD Proof full-chain receipt path: sample receipts, verification summaries, evidence-chain commits, and Quickstart docs.
 
 ---
 
