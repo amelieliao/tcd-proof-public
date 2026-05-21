@@ -2,8 +2,6 @@
 
 This document explains the public receipt and evidence model used by the TCD Proof demo materials.
 
-It is written for reviewers, customers, engineering teams, security teams, compliance teams, model-governance teams, and auditors who want to understand what a TCD Proof receipt represents and how it can be verified.
-
 This public document does **not** include private runtime source code, private policy files, signing keys, HMAC secrets, SQLite databases, raw customer payloads, or unredacted receipt bodies.
 
 ## Core idea
