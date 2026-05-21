@@ -8,24 +8,21 @@ This public repository contains redacted demo materials, sample receipt artifact
 
 ## What this repository is for
 
-This repository is designed for reviewers, customers, engineering teams, security teams, compliance teams, and auditors who want to understand what TCD Proof produces during a governed AI inference event.
+This repository shows the public proof path produced by TCD Proof: how a selected AI-assisted action becomes a governed, verifiable systems event.
 
-It shows how a selected AI-assisted action can become a verifiable systems event with:
+It demonstrates:
 
-- request and subject identity
+- identity binding for the request, subject, route, and decision
 - policy and policy-set binding
-- route and decision identity
 - Terminal Contract resolution
-- signed receipt issuance
-- receipt verification material
-- durable evidence-chain commit
-- ledger, audit, and commit references
+- signed receipt issuance and verification material
+- durable evidence-chain commit with ledger, audit, and commit references
 - build and image supply-chain binding
 - PQ-required signature path
 - restart-safe receipt lookup
 - independent verification reports
 
-The goal is to make the proof path easier to inspect without requiring reviewers to read the private runtime implementation first.
+The goal is to make the proof path inspectable without exposing the private runtime implementation.
 
 ---
 
