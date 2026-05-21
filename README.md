@@ -214,8 +214,6 @@ For audit review, the stronger statement is the verification-backed statement:
 
 ## Public inspection path
 
-You can inspect the public redacted artifacts without access to the private runtime.
-
 ### 1. Clone this public repository
 
 ```bash
