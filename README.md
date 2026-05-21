@@ -311,7 +311,7 @@ The receipt and evidence model is described here:
 
 [`docs/receipt-and-evidence-model.md`](docs/receipt-and-evidence-model.md)
 
-At a high level, a TCD Proof receipt can bind:
+A TCD Proof receipt can bind:
 
 - request identity
 - tenant and subject identity
