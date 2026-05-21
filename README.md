@@ -169,7 +169,7 @@ The redacted example summary is available here:
 
 ## Independent verification paths
 
-The demo includes multiple verification modes because a reviewer may receive receipt material in different ways.
+The demo includes multiple verification modes.
 
 | Verification path | What it demonstrates |
 |---|---|
