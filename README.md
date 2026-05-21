@@ -4,8 +4,6 @@ TCD Proof is a trusted control plane for governed, quantified, and externally ve
 
 This public repository contains redacted demo materials, sample receipt artifacts, verification summaries, and reviewer-facing Quickstart documentation for understanding the TCD Proof full-chain receipt path.
 
-It does **not** contain the private TCD runtime implementation.
-
 ---
 
 ## What this repository is for
