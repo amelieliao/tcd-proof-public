@@ -1,9 +1,5 @@
 # TCD Proof Public Demo Materials
 
-Redacted public demo materials for TCD Proof, including sample receipts, verification reports, evidence-chain commits, and a local Quickstart.
-
-## What this repository is for
-
 This repository shows how TCD Proof turns a selected AI-assisted action into a signed, reviewable receipt with policy binding, evidence references, and independent verification.
 
 ## What you can find here
