@@ -24,27 +24,6 @@ The goal is to make the proof path inspectable without exposing the private runt
 
 ---
 
-## What this repository does not contain
-
-This repository intentionally does **not** include:
-
-- private TCD runtime source code
-- private policy files
-- signing keys
-- HMAC secrets
-- KMS/HSM credentials
-- raw prompts or customer payloads
-- private receipt bodies from real customer workflows
-- local SQLite databases
-- local audit logs
-- local outbox files
-- unredacted execution artifacts
-- production deployment configuration
-
-The files here are public demo materials only.
-
----
-
 ## Repository layout
 
 ```text
