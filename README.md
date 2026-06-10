@@ -1,26 +1,17 @@
 # TCD Proof Public Demo Materials
 
-Redacted demo artifacts for inspecting the TCD Proof full-chain receipt path: sample receipts, verification summaries, evidence-chain commits, and Quickstart docs.
-
----
+Redacted public demo materials for TCD Proof, including sample receipts, verification reports, evidence-chain commits, and a local Quickstart.
 
 ## What this repository is for
 
-This repository shows the public proof path produced by TCD Proof: how a selected AI-assisted action becomes a governed, verifiable systems event.
+This repository shows how TCD Proof turns a selected AI-assisted action into a signed, reviewable receipt with policy binding, evidence references, and independent verification.
 
-It demonstrates:
+## What you can find here
 
-- identity binding for the request, subject, route, and decision
-- policy and policy-set binding
-- Terminal Contract resolution
-- signed receipt issuance and verification material
-- durable evidence-chain commit with ledger, audit, and commit references
-- build and image supply-chain binding
-- PQ-required signature path
-- restart-safe receipt lookup
+- redacted receipt summaries
 - independent verification reports
-
-The goal is to make the proof path inspectable without exposing the private runtime implementation.
+- evidence-chain commit examples
+- Quickstart docs for running the local demo
 
 ---
 
