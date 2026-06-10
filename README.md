@@ -1,4 +1,4 @@
-# TCD Proof Public Demo Materials
+# TCD Proof Public Demo
 
 This repository shows how TCD Proof turns a selected AI-assisted action into a signed, reviewable receipt with policy binding, evidence references, and independent verification.
 
