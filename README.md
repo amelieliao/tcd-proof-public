@@ -321,39 +321,6 @@ The architecture also includes a governed mutation loop for policy reloads, conf
 
 ---
 
-## Local demo boundary
-
-The public full-chain demo uses:
-
-- local HMAC signing
-- local SQLite persistence
-- local process restart
-- redacted receipt and verification artifacts
-- no raw customer payloads
-- no private runtime source code
-
-It does **not** claim:
-
-- global consensus
-- production HSM deployment
-- hardware-rooted signing in the public local run
-- raw customer-data inspection
-- complete production deployment semantics
-- formal mathematical proof of every runtime behavior
-
-It demonstrates a local, test-backed, full-chain governed receipt path.
-
-Production deployments can replace local HMAC and SQLite with stronger profiles for:
-
-- KMS/HSM-backed signing
-- hardware-root key provenance
-- externalized durable storage
-- coordinated multi-node evidence stores
-- stricter policy and authentication profiles
-- stricter operational and deployment guardrails
-
----
-
 ## How this maps to the TCD Proof website
 
 The website buttons can point to:
