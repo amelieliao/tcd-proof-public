@@ -1,0 +1,52 @@
+{
+  "demo_file": "sample_restart_safe_verify",
+  "scenario": "restart_safe_by_reference_verification",
+  "verify_request": {
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "raw_receipt_body_supplied": false,
+    "raw_signature_supplied": false,
+    "lookup_mode": "by_ref_after_restart"
+  },
+  "verify_report": {
+    "ok": true,
+    "reason": "verified_after_restart",
+    "verified_at": "2026-07-09T12:05:00Z",
+    "lookup": {
+      "after_restart": true,
+      "resolver": "durable_receipt_ref_store",
+      "store_id": "store:<redacted-demo-store-id>",
+      "local_path_redacted": true
+    },
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "recovered_material": {
+      "receipt_body_recovered": true,
+      "signature_recovered": true,
+      "verify_key_id_recovered": true,
+      "raw_material_redacted_in_demo_file": true
+    },
+    "checks": [
+      {
+        "name": "receipt_ref_lookup",
+        "ok": true,
+        "meaning": "The verifier found the receipt material using only the receipt reference."
+      },
+      {
+        "name": "signature",
+        "ok": true,
+        "meaning": "The recovered receipt signature verifies with an allowed public verification key."
+      },
+      {
+        "name": "policy_binding",
+        "ok": true,
+        "actual": "policy://demo/aml-kyb-alert-review/manual-review-v1"
+      },
+      {
+        "name": "storage_window",
+        "ok": true,
+        "chain_head": "chain_head:<redacted-demo-chain-head>",
+        "meaning": "The recovered receipt remains linked to the durable evidence window after restart."
+      }
+    ],
+    "buyer_meaning": "A customer or auditor can verify by receipt reference after restart, without relying on an in-memory response object."
+  }
+}
