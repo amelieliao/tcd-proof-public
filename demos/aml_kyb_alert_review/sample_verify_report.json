@@ -1,0 +1,76 @@
+{
+  "demo_file": "sample_verify_report",
+  "verify_report": {
+    "ok": true,
+    "reason": "verified",
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "verified_at": "2026-07-09T12:01:30Z",
+    "scenario": "synthetic_aml_kyb_alert_review",
+    "checks": [
+      {
+        "name": "canonical_body",
+        "ok": true,
+        "meaning": "The receipt body was canonicalized before verification."
+      },
+      {
+        "name": "receipt_head",
+        "ok": true,
+        "meaning": "The receipt head matches the receipt body digest."
+      },
+      {
+        "name": "signature",
+        "ok": true,
+        "meaning": "The receipt signature verifies with an allowed public verification key."
+      },
+      {
+        "name": "policy_binding",
+        "ok": true,
+        "expected": "policy://demo/aml-kyb-alert-review/manual-review-v1",
+        "actual": "policy://demo/aml-kyb-alert-review/manual-review-v1"
+      },
+      {
+        "name": "config_binding",
+        "ok": true,
+        "expected": "cfg:<redacted-demo-service-config>",
+        "actual": "cfg:<redacted-demo-service-config>"
+      },
+      {
+        "name": "build_binding",
+        "ok": true,
+        "expected": "build:<redacted-demo-build-id>",
+        "actual": "build:<redacted-demo-build-id>"
+      },
+      {
+        "name": "image_binding",
+        "ok": true,
+        "expected": "sha256:<redacted-demo-image-digest>",
+        "actual": "sha256:<redacted-demo-image-digest>"
+      },
+      {
+        "name": "pq_required_path",
+        "ok": true,
+        "meaning": "The verifier saw that the PQ-required path was recorded and satisfied for this demo receipt."
+      },
+      {
+        "name": "evidence_chain",
+        "ok": true,
+        "meaning": "The receipt is linked to a durable evidence reference and storage-window check."
+      }
+    ],
+    "signature": {
+      "signature_verified": true,
+      "verify_key_allowed": true,
+      "verify_key_id": "key:<redacted-demo-verify-key-id>",
+      "signature": "<redacted>"
+    },
+    "evidence": {
+      "audit_ref": "audit_ref:<redacted-demo-audit-ref>",
+      "attestation_ref": "attestation_ref:<redacted-demo-attestation-ref>",
+      "ledger_ref": "ledger_ref:<redacted-demo-ledger-ref>",
+      "commit_ref": "commit_ref:<redacted-demo-commit-ref>",
+      "chain_head": "chain_head:<redacted-demo-chain-head>",
+      "storage_window_verified": true
+    },
+    "buyer_meaning": "The decision receipt is genuine, policy-bound, config-bound, build-bound, and independently verifiable without exposing raw case data."
+  }
+}
