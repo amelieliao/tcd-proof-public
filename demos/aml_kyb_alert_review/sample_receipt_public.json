@@ -1,0 +1,72 @@
+{
+  "demo_file": "sample_receipt_public",
+  "receipt_public": {
+    "receipt_version": "v2",
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "issued_at": "2026-07-09T12:00:00Z",
+    "surface": "public_redacted",
+    "scenario": "synthetic_aml_kyb_alert_review",
+    "decision": {
+      "decision_id": "decision:<redacted-demo-decision-id>",
+      "route_id": "route:<redacted-demo-route-id>",
+      "allowed": false,
+      "required_action": "human_review",
+      "enforcement": "hold_for_review",
+      "reason_codes": [
+        "kyb_refresh_required",
+        "velocity_anomaly",
+        "policy_requires_receipt"
+      ]
+    },
+    "policy_binding": {
+      "policy_ref": "policy://demo/aml-kyb-alert-review/manual-review-v1",
+      "policyset_ref": "policyset://demo/aml-kyb-v1",
+      "policy_digest": "sha256:<redacted-demo-policy-digest>"
+    },
+    "config_binding": {
+      "service_config_fingerprint": "cfg:<redacted-demo-service-config>",
+      "route_config_fingerprint": "route_cfg:<redacted-demo-route-config>",
+      "receipt_config_fingerprint": "receipt_cfg:<redacted-demo-receipt-config>"
+    },
+    "supply_chain_binding": {
+      "build_id": "build:<redacted-demo-build-id>",
+      "image_digest": "sha256:<redacted-demo-image-digest>"
+    },
+    "pq": {
+      "pq_required": true,
+      "pq_signature_required": true,
+      "pq_path": "required-demo"
+    },
+    "evidence_refs": {
+      "audit_ref": "audit_ref:<redacted-demo-audit-ref>",
+      "attestation_ref": "attestation_ref:<redacted-demo-attestation-ref>",
+      "ledger_ref": "ledger_ref:<redacted-demo-ledger-ref>",
+      "commit_ref": "commit_ref:<redacted-demo-commit-ref>",
+      "chain_head": "chain_head:<redacted-demo-chain-head>",
+      "storage_window": "storage_window:<redacted-demo-window>"
+    },
+    "signature": {
+      "signature_present": true,
+      "verify_key_id": "key:<redacted-demo-verify-key-id>",
+      "signature_redacted": true
+    },
+    "public_redactions": [
+      "raw_prompt",
+      "raw_completion",
+      "raw_document",
+      "headers",
+      "cookies",
+      "auth_token",
+      "signing_secret",
+      "local_file_paths",
+      "sqlite_database_path"
+    ],
+    "not_a_claim": [
+      "production_hsm_deployment",
+      "production_hardware_root_trust",
+      "real_aml_model",
+      "regulatory_certification",
+      "global_consensus"
+    ]
+  }
+}
