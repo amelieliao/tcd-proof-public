@@ -1,0 +1,65 @@
+{
+  "request_id": "demo-aml-kyb-alert-0001",
+  "tenant": "synthetic-fintech-demo",
+  "user": "compliance-review-assistant",
+  "session": "demo-session-redacted",
+  "model": "synthetic-aml-review-assistant",
+  "gpu": "none",
+  "task": "aml_kyb_alert_review",
+  "lang": "en",
+  "trust_zone": "partner",
+  "route_profile": "compliance_review",
+  "risk_label": "financial_crime_compliance",
+  "threat_kind": "synthetic_kyb_alert",
+  "threat_confidence": 0.74,
+  "pq_required": true,
+  "build_id": "build:<redacted-demo-build-id>",
+  "image_digest": "sha256:<redacted-demo-image-digest>",
+  "compliance_tags": [
+    "AML",
+    "KYB",
+    "SanctionsScreening",
+    "AdvisorDemo"
+  ],
+  "trace_vector": [
+    0.18,
+    0.71,
+    0.63,
+    0.22
+  ],
+  "entropy": 0.42,
+  "spectrum": [
+    0.11,
+    0.19,
+    0.31,
+    0.39
+  ],
+  "features": [
+    0.82,
+    0.67,
+    0.58,
+    0.21,
+    0.13
+  ],
+  "base_temp": 0.2,
+  "base_top_p": 0.7,
+  "base_max_tokens": 512,
+  "tokens_delta": 0,
+  "drift_score": 0.16,
+  "context": {
+    "case_type": "synthetic_ai_assisted_alert_review",
+    "case_id": "case_demo_redacted_001",
+    "customer_type": "business_entity",
+    "jurisdiction": "synthetic-region",
+    "alert_summary": "Newly onboarded merchant shows rapid volume growth and multiple synthetic counterparties with incomplete KYB refresh status.",
+    "available_evidence": [
+      "counterparty_count_above_demo_threshold",
+      "recent_volume_growth_above_demo_threshold",
+      "kyb_refresh_status_incomplete",
+      "no_sanctions_match_in_demo_dataset"
+    ],
+    "ai_assistance_role": "The AI assistant summarizes risk factors and proposes whether the case should be allowed, degraded, blocked, or sent to manual review.",
+    "requested_control": "Return a governed decision with a signed, policy-bound receipt.",
+    "redaction_note": "No raw prompt, completion, document, header, cookie, auth token, signing key, bank data, customer data, or personal data is included."
+  }
+}
