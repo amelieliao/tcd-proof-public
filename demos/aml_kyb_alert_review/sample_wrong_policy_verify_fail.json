@@ -1,0 +1,51 @@
+{
+  "demo_file": "sample_wrong_policy_verify_fail",
+  "verify_request": {
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "expected_policy_ref": "policy://demo/aml-kyb-alert-review/auto-allow-v1",
+    "expected_service_config_fingerprint": "cfg:<wrong-demo-service-config>",
+    "expected_build_id": "build:<wrong-demo-build-id>"
+  },
+  "verify_report": {
+    "ok": false,
+    "reason": "binding_mismatch",
+    "receipt_ref": "receipt_ref:<redacted-demo-receipt-ref>",
+    "verified_at": "2026-07-09T12:02:10Z",
+    "failed_checks": [
+      {
+        "name": "policy_binding",
+        "ok": false,
+        "expected": "policy://demo/aml-kyb-alert-review/auto-allow-v1",
+        "actual": "policy://demo/aml-kyb-alert-review/manual-review-v1",
+        "meaning": "The receipt proves a manual-review policy, not the auto-allow policy requested by the verifier."
+      },
+      {
+        "name": "config_binding",
+        "ok": false,
+        "expected": "cfg:<wrong-demo-service-config>",
+        "actual": "cfg:<redacted-demo-service-config>",
+        "meaning": "The receipt was not issued under the service config fingerprint requested by the verifier."
+      },
+      {
+        "name": "build_binding",
+        "ok": false,
+        "expected": "build:<wrong-demo-build-id>",
+        "actual": "build:<redacted-demo-build-id>",
+        "meaning": "The receipt was not issued by the build requested by the verifier."
+      }
+    ],
+    "checks_still_ok": [
+      "canonical_body",
+      "receipt_head",
+      "signature",
+      "verify_key_allowlist"
+    ],
+    "signature": {
+      "signature_verified": true,
+      "verify_key_allowed": true,
+      "verify_key_id": "key:<redacted-demo-verify-key-id>",
+      "signature": "<redacted>"
+    },
+    "buyer_meaning": "The receipt is genuine, but it does not prove the wrong policy, wrong config, or wrong build. This is the control buyers want: a valid signature is not enough if the binding is wrong."
+  }
+}
