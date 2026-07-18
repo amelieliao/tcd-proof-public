@@ -1,0 +1,96 @@
+{
+  "artifact": {
+    "verifications": [
+      {
+        "proposed_business_action": "clear_low_risk_alert",
+        "scenario_id": "synthetic-clear-low-risk",
+        "verification": {
+          "body_canonical_verified": true,
+          "build_binding_verified": true,
+          "cfg_binding_verified": true,
+          "errors": [],
+          "head_verified": true,
+          "image_binding_verified": true,
+          "integrity_hash_verified": true,
+          "ok": true,
+          "policy_binding_verified": true,
+          "pq_ok": true,
+          "pq_required": true,
+          "pq_signature_ok": true,
+          "pq_signature_required": true,
+          "reason": "receipt",
+          "reason_code": "OK",
+          "service_config_binding_verified": true,
+          "signature_verified": true,
+          "verify_input_source": "receipt_verification",
+          "verify_key_allowed": true,
+          "warnings": []
+        }
+      },
+      {
+        "proposed_business_action": "hold_for_enhanced_due_diligence",
+        "scenario_id": "synthetic-hold-for-enhanced-due-diligence",
+        "verification": {
+          "body_canonical_verified": true,
+          "build_binding_verified": true,
+          "cfg_binding_verified": true,
+          "errors": [],
+          "head_verified": true,
+          "image_binding_verified": true,
+          "integrity_hash_verified": true,
+          "ok": true,
+          "policy_binding_verified": true,
+          "pq_ok": true,
+          "pq_required": true,
+          "pq_signature_ok": true,
+          "pq_signature_required": true,
+          "reason": "receipt",
+          "reason_code": "OK",
+          "service_config_binding_verified": true,
+          "signature_verified": true,
+          "verify_input_source": "receipt_verification",
+          "verify_key_allowed": true,
+          "warnings": []
+        }
+      },
+      {
+        "proposed_business_action": "block_high_risk_onboarding",
+        "scenario_id": "synthetic-block-high-risk-onboarding",
+        "verification": {
+          "body_canonical_verified": true,
+          "build_binding_verified": true,
+          "cfg_binding_verified": true,
+          "errors": [],
+          "head_verified": true,
+          "image_binding_verified": true,
+          "integrity_hash_verified": true,
+          "ok": true,
+          "policy_binding_verified": true,
+          "pq_ok": true,
+          "pq_required": true,
+          "pq_signature_ok": true,
+          "pq_signature_required": true,
+          "reason": "receipt",
+          "reason_code": "OK",
+          "service_config_binding_verified": true,
+          "signature_verified": true,
+          "verify_input_source": "receipt_verification",
+          "verify_key_allowed": true,
+          "warnings": []
+        }
+      }
+    ]
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_verification_matrix.v1"
+}

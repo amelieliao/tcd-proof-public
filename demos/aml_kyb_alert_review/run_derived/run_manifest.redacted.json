@@ -1,0 +1,33 @@
+{
+  "artifact": {
+    "diagnose_endpoint": "/diagnose",
+    "raw_artifacts_retained_in_public_repo": false,
+    "runtime_generated": true,
+    "scenario_manifest": {
+      "scenario_count": 3,
+      "schema": "tcd.public.aml_kyb_scenario_manifest.v1"
+    },
+    "service_entrypoint": "tcd.service_http:create_app",
+    "storage_backend": {
+      "evidence_store": "sqlite",
+      "receipt_ref_store": "sqlite"
+    },
+    "synthetic_data": true,
+    "terminal_outcomes_observed": [
+      "block"
+    ],
+    "verify_endpoint": "/verify"
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_run_manifest.v1"
+}

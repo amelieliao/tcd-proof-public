@@ -1,0 +1,61 @@
+{
+  "request_id": "aml-kyb-pilot-clear-low-risk",
+  "tenant": "synthetic-fintech-demo",
+  "user": "compliance-review-assistant",
+  "session": "aml-kyb-pilot-session",
+  "model_id": "synthetic-aml-review-assistant",
+  "gpu_id": "none",
+  "task": "aml_kyb_alert_review",
+  "lang": "en",
+  "trust_zone": "partner",
+  "route_profile": "inference",
+  "risk_label": "low",
+  "threat_kind": "synthetic_kyb_alert",
+  "threat_confidence": 0.12,
+  "pq_required": true,
+  "compliance_tags": [
+    "aml",
+    "kyb",
+    "synthetic"
+  ],
+  "trace_vector": [
+    0.08,
+    0.11,
+    0.06,
+    0.09
+  ],
+  "entropy": 0.18,
+  "spectrum": [
+    0.05,
+    0.08,
+    0.11,
+    0.14
+  ],
+  "features": [
+    0.12,
+    0.18,
+    0.10,
+    0.06
+  ],
+  "base_temp": 0.2,
+  "base_top_p": 0.7,
+  "base_max_tokens": 256,
+  "tokens_delta": 0,
+  "drift_score": 0.03,
+  "context": {
+    "scenario_id": "synthetic-clear-low-risk",
+    "case_type": "synthetic_ai_assisted_alert_review",
+    "case_id": "synthetic_case_clear_low_risk",
+    "proposed_business_action": "clear_low_risk_alert",
+    "buyer_facing_workflow_consequence": "alert_cleared",
+    "customer_type": "business_entity",
+    "jurisdiction": "synthetic-region",
+    "alert_summary": "Synthetic low-risk merchant alert with completed KYB refresh and no synthetic sanctions match.",
+    "available_evidence_refs": [
+      "evidence_ref:synthetic-kyb-refresh-complete",
+      "evidence_ref:synthetic-no-sanctions-match"
+    ],
+    "ai_assistance_role": "The AI assistant summarizes risk factors and proposes a clearance action.",
+    "redaction_note": "Synthetic request only; no private case material is included."
+  }
+}

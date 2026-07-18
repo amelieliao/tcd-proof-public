@@ -1,0 +1,25 @@
+{
+  "artifact": {
+    "build_binding_verified": true,
+    "image_binding_verified": true,
+    "policy_binding_verified": true,
+    "process_restart_completed": true,
+    "receipt_ref": "receipt_ref:redacted-run-001",
+    "signature_verified": true,
+    "verified_after_restart": true,
+    "verify_input": "receipt_ref_only",
+    "verify_input_source": "receipt_ref_lookup"
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_restart_safe_verification.v1"
+}

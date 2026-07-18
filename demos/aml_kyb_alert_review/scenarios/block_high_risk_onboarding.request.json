@@ -1,0 +1,62 @@
+{
+  "request_id": "aml-kyb-pilot-block-high-risk",
+  "tenant": "synthetic-fintech-demo",
+  "user": "compliance-review-assistant",
+  "session": "aml-kyb-pilot-session",
+  "model_id": "synthetic-aml-review-assistant",
+  "gpu_id": "none",
+  "task": "aml_kyb_alert_review",
+  "lang": "en",
+  "trust_zone": "partner",
+  "route_profile": "inference",
+  "risk_label": "critical",
+  "threat_kind": "synthetic_kyb_alert",
+  "threat_confidence": 0.94,
+  "pq_required": true,
+  "compliance_tags": [
+    "aml",
+    "kyb",
+    "high_risk_onboarding",
+    "synthetic"
+  ],
+  "trace_vector": [
+    0.82,
+    0.91,
+    0.88,
+    0.79
+  ],
+  "entropy": 0.71,
+  "spectrum": [
+    0.44,
+    0.59,
+    0.72,
+    0.86
+  ],
+  "features": [
+    0.91,
+    0.87,
+    0.82,
+    0.78
+  ],
+  "base_temp": 0.2,
+  "base_top_p": 0.7,
+  "base_max_tokens": 256,
+  "tokens_delta": 0,
+  "drift_score": 0.32,
+  "context": {
+    "scenario_id": "synthetic-block-high-risk-onboarding",
+    "case_type": "synthetic_ai_assisted_alert_review",
+    "case_id": "synthetic_case_block_high_risk",
+    "proposed_business_action": "block_high_risk_onboarding",
+    "buyer_facing_workflow_consequence": "onboarding_blocked",
+    "customer_type": "business_entity",
+    "jurisdiction": "synthetic-region",
+    "alert_summary": "Synthetic high-risk onboarding case with concentrated counterparties and unresolved KYB review markers.",
+    "available_evidence_refs": [
+      "evidence_ref:synthetic-counterparty-concentration",
+      "evidence_ref:synthetic-unresolved-kyb-markers"
+    ],
+    "ai_assistance_role": "The AI assistant summarizes risk factors and proposes blocking high-risk onboarding.",
+    "redaction_note": "Synthetic request only; no private case material is included."
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "artifact": {
+    "claims": [
+      {
+        "claim": "A real AML/KYB-specific receipt was issued",
+        "evidence": "receipt_index.redacted.json",
+        "status": "demonstrated_locally"
+      },
+      {
+        "claim": "At least one receipt verified successfully",
+        "evidence": "verification_matrix.redacted.json",
+        "status": "demonstrated_locally"
+      },
+      {
+        "claim": "Wrong expected build binding fails verification",
+        "evidence": "wrong_binding_failures.redacted.json",
+        "status": "demonstrated_locally"
+      },
+      {
+        "claim": "Receipt verifies after process restart by receipt_ref",
+        "evidence": "restart_safe_verification.redacted.json",
+        "status": "demonstrated_locally"
+      },
+      {
+        "claim": "Production HSM deployment",
+        "evidence": "../production_boundaries.md",
+        "status": "not_claimed"
+      },
+      {
+        "claim": "Regulatory certification",
+        "evidence": "../production_boundaries.md",
+        "status": "not_claimed"
+      }
+    ]
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_claims_matrix.v1"
+}

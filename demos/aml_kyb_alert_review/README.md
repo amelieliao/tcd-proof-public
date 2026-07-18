@@ -14,8 +14,17 @@ TCD Proof sits beside that AI workflow and returns:
 - a public receipt reference that can be shared with a customer, auditor, advisor, or security reviewer;
 - a redacted public receipt view;
 - an independent verification report;
-- a negative verification example showing that the receipt fails when the verifier asks for the wrong policy, config, or build;
+- a negative verification example showing that the receipt fails when the verifier asks for the wrong expected binding; in the current run-derived pilot, the mismatch is `expected_build_id`;
 - a restart-safe verification example showing that verification can work by receipt reference after service restart.
+
+## Artifact status
+
+This demo has two kinds of files:
+
+- Static illustrative samples show the buyer-facing shape of an AML/KYB receipt workflow. They are marked by `illustrative_manifest.json` and are not evidence of execution.
+- Run-derived artifacts in `run_derived/` come from an authorized local execution of the current runtime snapshot and are redacted for public review.
+
+The current run-derived pilot executed three synthetic scenarios. All three actions were blocked by the current authorized runtime profile. The public artifacts preserve this actual result and do not claim that allow or degrade outcomes were demonstrated in this run.
 
 ## What a buyer should notice
 
@@ -39,9 +48,12 @@ The files are synthetic and redacted. They are suitable for customer discovery, 
 
 ## Files
 
-- `sample_alert_request.json`: synthetic AML/KYB alert review request.
-- `sample_receipt_public.json`: redacted public receipt view.
-- `sample_verify_report.json`: independent verify OK example.
-- `sample_wrong_policy_verify_fail.json`: verify failure caused by wrong expected policy/config/build.
-- `sample_restart_safe_verify.json`: by-reference verification after restart.
-- `demo_walkthrough.md`: demo flow from diagnose to verify.
+- `sample_alert_request.json`: illustrative synthetic AML/KYB alert review request.
+- `illustrative_manifest.json`: marks static samples as illustrative, not execution evidence.
+- `run_derived/`: redacted artifacts from the latest authorized local pilot run.
+- `assurance_packet.md`: buyer-facing packet summarizing the actual synthetic run.
+- `integration_gap_report.md`: pilot integration questions and gaps.
+- `production_boundaries.md`: local demo boundaries and production requirements.
+- `demo_acceptance_gate.md`: acceptance criteria and validation command.
+- `claims_matrix.md`: claims supported by this public packet.
+- `demo_walkthrough.md`: demo flow from illustrative shape to run-derived verification evidence.

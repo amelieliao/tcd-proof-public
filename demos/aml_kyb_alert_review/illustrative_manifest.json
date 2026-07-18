@@ -1,0 +1,34 @@
+{
+  "schema": "tcd.public.illustrative_manifest.v1",
+  "artifact_status": "illustrative_static_sample",
+  "runtime_generated": false,
+  "intended_use": "buyer-facing product-shape illustration",
+  "not_evidence_of_execution": true,
+  "files": [
+    {
+      "path": "sample_alert_request.json",
+      "status": "illustrative_static_sample",
+      "runtime_generated": false
+    },
+    {
+      "path": "sample_receipt_public.json",
+      "status": "illustrative_static_sample",
+      "runtime_generated": false
+    },
+    {
+      "path": "sample_verify_report.json",
+      "status": "illustrative_static_sample",
+      "runtime_generated": false
+    },
+    {
+      "path": "sample_wrong_policy_verify_fail.json",
+      "status": "illustrative_static_sample",
+      "runtime_generated": false
+    },
+    {
+      "path": "sample_restart_safe_verify.json",
+      "status": "illustrative_static_sample",
+      "runtime_generated": false
+    }
+  ]
+}

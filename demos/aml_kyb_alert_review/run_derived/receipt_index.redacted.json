@@ -1,0 +1,69 @@
+{
+  "artifact": {
+    "receipts": [
+      {
+        "attestation_ref_present": true,
+        "audit_ref_present": true,
+        "build_id": "build_id:redacted-run-001",
+        "commit_ref": "commit_ref:redacted-run-001",
+        "image_digest": "image_digest:redacted-run-001",
+        "integrity_hash_verified": true,
+        "ledger_ref": "ledger_ref:redacted-run-001",
+        "policy_ref": "policy_ref:redacted-run-001",
+        "policyset_ref": "policyset_ref:redacted-run-001",
+        "proposed_business_action": "clear_low_risk_alert",
+        "receipt_cfg_fp": "receipt_cfg_fp:redacted-run-001",
+        "receipt_ref": "receipt_ref:redacted-run-001",
+        "scenario_id": "synthetic-clear-low-risk",
+        "service_config_fingerprint": "service_config_fingerprint:redacted-run-001",
+        "signature_verified": true
+      },
+      {
+        "attestation_ref_present": true,
+        "audit_ref_present": true,
+        "build_id": "build_id:redacted-run-001",
+        "commit_ref": "commit_ref:redacted-run-002",
+        "image_digest": "image_digest:redacted-run-001",
+        "integrity_hash_verified": true,
+        "ledger_ref": "ledger_ref:redacted-run-002",
+        "policy_ref": "policy_ref:redacted-run-001",
+        "policyset_ref": "policyset_ref:redacted-run-001",
+        "proposed_business_action": "hold_for_enhanced_due_diligence",
+        "receipt_cfg_fp": "receipt_cfg_fp:redacted-run-001",
+        "receipt_ref": "receipt_ref:redacted-run-002",
+        "scenario_id": "synthetic-hold-for-enhanced-due-diligence",
+        "service_config_fingerprint": "service_config_fingerprint:redacted-run-001",
+        "signature_verified": true
+      },
+      {
+        "attestation_ref_present": true,
+        "audit_ref_present": true,
+        "build_id": "build_id:redacted-run-001",
+        "commit_ref": "commit_ref:redacted-run-003",
+        "image_digest": "image_digest:redacted-run-001",
+        "integrity_hash_verified": true,
+        "ledger_ref": "ledger_ref:redacted-run-003",
+        "policy_ref": "policy_ref:redacted-run-001",
+        "policyset_ref": "policyset_ref:redacted-run-001",
+        "proposed_business_action": "block_high_risk_onboarding",
+        "receipt_cfg_fp": "receipt_cfg_fp:redacted-run-001",
+        "receipt_ref": "receipt_ref:redacted-run-003",
+        "scenario_id": "synthetic-block-high-risk-onboarding",
+        "service_config_fingerprint": "service_config_fingerprint:redacted-run-001",
+        "signature_verified": true
+      }
+    ]
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_receipt_index.v1"
+}

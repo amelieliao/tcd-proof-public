@@ -1,0 +1,37 @@
+{
+  "schema": "tcd.public.aml_kyb_scenario_manifest.v1",
+  "synthetic_data": true,
+  "request_schema_notes": {
+    "runtime_request_model": "tcd.service_http.DiagnoseRequest",
+    "uses_model_id": true,
+    "uses_gpu_id": true,
+    "extra_top_level_fields_allowed": false,
+    "business_metadata_location": "context"
+  },
+  "scenarios": [
+    {
+      "scenario_id": "synthetic-clear-low-risk",
+      "request_file": "clear_low_risk_alert.request.json",
+      "proposed_business_action": "clear_low_risk_alert",
+      "buyer_meaning": "A synthetic low-risk alert is proposed for clearance.",
+      "expected_business_consequence": "alert_cleared",
+      "expected_tcd_terminal_outcome_hint": "allow"
+    },
+    {
+      "scenario_id": "synthetic-hold-for-enhanced-due-diligence",
+      "request_file": "hold_for_enhanced_due_diligence.request.json",
+      "proposed_business_action": "hold_for_enhanced_due_diligence",
+      "buyer_meaning": "A synthetic case is proposed for enhanced due diligence or human review.",
+      "expected_business_consequence": "hold_for_enhanced_due_diligence",
+      "expected_tcd_terminal_outcome_hint": "degrade"
+    },
+    {
+      "scenario_id": "synthetic-block-high-risk-onboarding",
+      "request_file": "block_high_risk_onboarding.request.json",
+      "proposed_business_action": "block_high_risk_onboarding",
+      "buyer_meaning": "A synthetic high-risk onboarding action is proposed for blocking.",
+      "expected_business_consequence": "onboarding_blocked",
+      "expected_tcd_terminal_outcome_hint": "block"
+    }
+  ]
+}

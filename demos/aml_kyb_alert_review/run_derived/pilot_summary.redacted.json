@@ -1,0 +1,36 @@
+{
+  "artifact": {
+    "actual_sig_alg": "hmac-sha256",
+    "actual_sig_alg_source": "runner_local_hmac_sha256_configuration",
+    "actual_signing_profile": "hmac_local_demo",
+    "actual_storage_backend": {
+      "evidence_store": "sqlite",
+      "receipt_ref_store": "sqlite"
+    },
+    "actual_terminal_outcomes_observed": [
+      "block"
+    ],
+    "at_least_one_receipt_issued": true,
+    "at_least_one_verification_ok": true,
+    "diagnose_endpoint": "/diagnose",
+    "independent_verification_note": "Verification is independent of the original product response and UI. The local profile uses demo-authorized verification material.",
+    "pq_note": "The local run records and checks the configured PQ-required condition. It does not claim a production post-quantum signature algorithm unless actual_sig_alg says so.",
+    "restart_safe_verification_ok": true,
+    "scenario_count": 3,
+    "service_entrypoint": "tcd.service_http:create_app",
+    "verify_endpoint": "/verify",
+    "wrong_binding_failed": true
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_pilot_summary.v1"
+}

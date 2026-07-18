@@ -1,0 +1,31 @@
+{
+  "artifact": {
+    "negative_verifications": [
+      {
+        "buyer_message": "A valid receipt is not enough by itself. The verifier also checks whether the receipt proves the policy and runtime context the reviewer expected.",
+        "errors": [
+          "attest:BUILD_BINDING_MISMATCH",
+          "build_id_mismatch",
+          "BUILD_BINDING_MISMATCH"
+        ],
+        "mismatch_type": "expected_build_id",
+        "ok": false,
+        "reason": "receipt",
+        "reason_code": "BUILD_BINDING_MISMATCH",
+        "signature_or_integrity_may_still_be_valid": true
+      }
+    ]
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_wrong_binding_failures.v1"
+}

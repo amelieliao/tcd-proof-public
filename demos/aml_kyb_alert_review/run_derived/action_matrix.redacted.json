@@ -1,0 +1,98 @@
+{
+  "artifact": {
+    "actions": [
+      {
+        "actual_required_action": "block",
+        "actual_tcd_decision": "block",
+        "actual_tcd_terminal_outcome": "block",
+        "build_binding_verified": true,
+        "buyer_facing_workflow_consequence": "workflow_blocked_by_core_tcd_outcome",
+        "config_binding_verified": true,
+        "expected_scenario_hint": "allow",
+        "image_binding_verified": true,
+        "limitations": [
+          "actual_runtime_outcome_differed_from_scenario_hint; recorded actual result without rewriting it",
+          "all_three_synthetic_actions_were_blocked_by_the_current_authorized_runtime_profile",
+          "current_pilot_did_not_demonstrate_allow_or_degrade_outcomes",
+          "core_policy_was_not_modified_for_display_purposes"
+        ],
+        "policy_binding_verified": true,
+        "proposed_business_action": "clear_low_risk_alert",
+        "receipt_issued": true,
+        "receipt_ref": "receipt_ref:redacted-run-001",
+        "scenario_id": "synthetic-clear-low-risk",
+        "storage_backend": {
+          "evidence_store": "sqlite",
+          "receipt_ref_store": "sqlite"
+        },
+        "verification_ok": true,
+        "verify_input_source": "receipt_verification"
+      },
+      {
+        "actual_required_action": "block",
+        "actual_tcd_decision": "block",
+        "actual_tcd_terminal_outcome": "block",
+        "build_binding_verified": true,
+        "buyer_facing_workflow_consequence": "workflow_blocked_by_core_tcd_outcome",
+        "config_binding_verified": true,
+        "expected_scenario_hint": "degrade",
+        "image_binding_verified": true,
+        "limitations": [
+          "actual_runtime_outcome_differed_from_scenario_hint; recorded actual result without rewriting it",
+          "all_three_synthetic_actions_were_blocked_by_the_current_authorized_runtime_profile",
+          "current_pilot_did_not_demonstrate_allow_or_degrade_outcomes",
+          "core_policy_was_not_modified_for_display_purposes"
+        ],
+        "policy_binding_verified": true,
+        "proposed_business_action": "hold_for_enhanced_due_diligence",
+        "receipt_issued": true,
+        "receipt_ref": "receipt_ref:redacted-run-002",
+        "scenario_id": "synthetic-hold-for-enhanced-due-diligence",
+        "storage_backend": {
+          "evidence_store": "sqlite",
+          "receipt_ref_store": "sqlite"
+        },
+        "verification_ok": true,
+        "verify_input_source": "receipt_verification"
+      },
+      {
+        "actual_required_action": "block",
+        "actual_tcd_decision": "block",
+        "actual_tcd_terminal_outcome": "block",
+        "build_binding_verified": true,
+        "buyer_facing_workflow_consequence": "onboarding_blocked",
+        "config_binding_verified": true,
+        "expected_scenario_hint": "block",
+        "image_binding_verified": true,
+        "limitations": [
+          "all_three_synthetic_actions_were_blocked_by_the_current_authorized_runtime_profile",
+          "current_pilot_did_not_demonstrate_allow_or_degrade_outcomes",
+          "core_policy_was_not_modified_for_display_purposes"
+        ],
+        "policy_binding_verified": true,
+        "proposed_business_action": "block_high_risk_onboarding",
+        "receipt_issued": true,
+        "receipt_ref": "receipt_ref:redacted-run-003",
+        "scenario_id": "synthetic-block-high-risk-onboarding",
+        "storage_backend": {
+          "evidence_store": "sqlite",
+          "receipt_ref_store": "sqlite"
+        },
+        "verification_ok": true,
+        "verify_input_source": "receipt_verification"
+      }
+    ]
+  },
+  "artifact_metadata": {
+    "artifact_status": "run_derived_redacted",
+    "local_path_present": false,
+    "raw_completion_present": false,
+    "raw_customer_data_present": false,
+    "raw_prompt_present": false,
+    "runtime_generated": true,
+    "signing_secret_present": false,
+    "source": "authorized_local_runtime_snapshot",
+    "synthetic_data": true
+  },
+  "schema": "tcd.public.aml_kyb_action_matrix.v1"
+}

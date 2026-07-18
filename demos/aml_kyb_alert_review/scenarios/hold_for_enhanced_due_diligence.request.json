@@ -1,0 +1,62 @@
+{
+  "request_id": "aml-kyb-pilot-hold-edd",
+  "tenant": "synthetic-fintech-demo",
+  "user": "compliance-review-assistant",
+  "session": "aml-kyb-pilot-session",
+  "model_id": "synthetic-aml-review-assistant",
+  "gpu_id": "none",
+  "task": "aml_kyb_alert_review",
+  "lang": "en",
+  "trust_zone": "partner",
+  "route_profile": "inference",
+  "risk_label": "elevated",
+  "threat_kind": "synthetic_kyb_alert",
+  "threat_confidence": 0.68,
+  "pq_required": true,
+  "compliance_tags": [
+    "aml",
+    "kyb",
+    "enhanced_due_diligence",
+    "synthetic"
+  ],
+  "trace_vector": [
+    0.31,
+    0.56,
+    0.49,
+    0.38
+  ],
+  "entropy": 0.42,
+  "spectrum": [
+    0.19,
+    0.23,
+    0.35,
+    0.41
+  ],
+  "features": [
+    0.58,
+    0.61,
+    0.52,
+    0.44
+  ],
+  "base_temp": 0.2,
+  "base_top_p": 0.7,
+  "base_max_tokens": 256,
+  "tokens_delta": 0,
+  "drift_score": 0.16,
+  "context": {
+    "scenario_id": "synthetic-hold-for-enhanced-due-diligence",
+    "case_type": "synthetic_ai_assisted_alert_review",
+    "case_id": "synthetic_case_hold_edd",
+    "proposed_business_action": "hold_for_enhanced_due_diligence",
+    "buyer_facing_workflow_consequence": "hold_for_enhanced_due_diligence",
+    "customer_type": "business_entity",
+    "jurisdiction": "synthetic-region",
+    "alert_summary": "Synthetic merchant alert with rapid volume growth and incomplete KYB refresh status.",
+    "available_evidence_refs": [
+      "evidence_ref:synthetic-volume-growth",
+      "evidence_ref:synthetic-kyb-refresh-incomplete"
+    ],
+    "ai_assistance_role": "The AI assistant summarizes risk factors and proposes enhanced due diligence.",
+    "redaction_note": "Synthetic request only; no private case material is included."
+  }
+}
