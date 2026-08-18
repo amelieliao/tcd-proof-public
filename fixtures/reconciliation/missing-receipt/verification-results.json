@@ -1,0 +1,16 @@
+{
+  "results": [
+    {
+      "failure_code": null,
+      "ok": true,
+      "receipt_ref": "receipt:synthetic:reconcile:001"
+    },
+    {
+      "failure_code": null,
+      "ok": true,
+      "receipt_ref": "receipt:synthetic:reconcile:002"
+    }
+  ],
+  "schema": "tcd.reconciliation.verification-results.v0.1",
+  "synthetic_data": true
+}

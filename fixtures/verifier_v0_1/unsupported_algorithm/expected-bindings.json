@@ -1,0 +1,19 @@
+{
+  "build_id": "tcd-proof-public-fixture-build-v0.1",
+  "config": {
+    "cfg_fp": "sha256:ba2b8de784ef0607f281d10037018bebf00538dd1c5537cbad8f2f3f3f386ec0"
+  },
+  "image_digest": "sha256:400ad637d6ad8e118d97aea228ee22c205a08fe00a715c44e59dd04c83c5177b",
+  "key_id": "tcd-public-pilot-ed25519-2026-08",
+  "policy_digest": "sha256:4c36cbca9fda05a817609311992e999f1a067850a89faefc7fab7dda18eb9fd6",
+  "policy_ref": "policy:aml-kyb-alert-review:v1",
+  "profile": "illustrative_public_pilot_profile",
+  "profile_version": "0.1",
+  "public_key_fingerprint": "sha256:ecc9d6481ff4809459d936a9f505a569ac78906512f60b5e7714a7cb1cc04e7e",
+  "required_fields": [
+    "receipt_body.claims.decision_outcome",
+    "receipt_body.claims.human_review_state",
+    "receipt_body.e.refs"
+  ],
+  "schema": "tcd.receipt.profile.v0.1"
+}

@@ -1,0 +1,33 @@
+{
+  "receipts": [
+    {
+      "committed": true,
+      "human_override": false,
+      "issued": true,
+      "receipt_ref": "receipt:synthetic:reconcile:001",
+      "received_by_tcd": true,
+      "scenario_id": "clear_low_risk_alert",
+      "upstream_action_id": "upstream-action-001"
+    },
+    {
+      "committed": true,
+      "human_override": true,
+      "issued": true,
+      "receipt_ref": "receipt:synthetic:reconcile:002",
+      "received_by_tcd": true,
+      "scenario_id": "hold_for_enhanced_due_diligence",
+      "upstream_action_id": "upstream-action-002"
+    },
+    {
+      "committed": false,
+      "human_override": false,
+      "issued": true,
+      "receipt_ref": "receipt:synthetic:reconcile:003",
+      "received_by_tcd": true,
+      "scenario_id": "block_high_risk_onboarding",
+      "upstream_action_id": "upstream-action-003"
+    }
+  ],
+  "schema": "tcd.reconciliation.receipt-index.v0.1",
+  "synthetic_data": true
+}

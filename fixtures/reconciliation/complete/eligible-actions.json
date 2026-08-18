@@ -1,0 +1,24 @@
+{
+  "actions": [
+    {
+      "eligible": true,
+      "human_review_expected": false,
+      "scenario_id": "clear_low_risk_alert",
+      "upstream_action_id": "upstream-action-001"
+    },
+    {
+      "eligible": true,
+      "human_review_expected": true,
+      "scenario_id": "hold_for_enhanced_due_diligence",
+      "upstream_action_id": "upstream-action-002"
+    },
+    {
+      "eligible": true,
+      "human_review_expected": true,
+      "scenario_id": "block_high_risk_onboarding",
+      "upstream_action_id": "upstream-action-003"
+    }
+  ],
+  "schema": "tcd.reconciliation.eligible-actions.v0.1",
+  "synthetic_data": true
+}

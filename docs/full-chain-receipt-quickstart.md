@@ -9,6 +9,8 @@ It is designed for two audiences:
 
 This public repository does **not** contain the private TCD runtime implementation.
 
+This Quickstart describes the historical authorized local runtime path using local HMAC signing and local SQLite persistence. It is separate from the public Ed25519 verifier profile documented in [`docs/public-verifier.md`](public-verifier.md).
+
 ## What this validates
 
 A successful full-chain local run validates:
@@ -153,7 +155,7 @@ tcd.service_http:create_app
 ## 1. Enter the private runtime repository
 
 ```bash
-cd ~/tcd-safety-sidecar
+cd <authorized-runtime-repo>
 ```
 
 ## 2. Activate the virtual environment

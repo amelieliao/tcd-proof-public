@@ -1,0 +1,69 @@
+{
+  "claim_status": "illustrative_verifier_test_vector",
+  "profile": "illustrative_public_pilot_profile",
+  "profile_version": "0.1",
+  "receipt_body": {
+    "attestor": {
+      "id": "tcd-public-pilot-attestor",
+      "profile": "illustrative_public_pilot_profile"
+    },
+    "auth_sig": {
+      "alg": "Ed25519",
+      "key_id": "tcd-public-pilot-ed25519-2026-08",
+      "public_key_fingerprint": "sha256:ecc9d6481ff4809459d936a9f505a569ac78906512f60b5e7714a7cb1cc04e7e",
+      "val": "xy1RnLIlayDVWxCwpDdmHgZxQQMMDQodWpfyZ9N+JedKdhMnMUiPZJoR8RorFZYs/iNTWUReYtvdXnwligEiAw=="
+    },
+    "claims": {
+      "action_type": "aml_kyb_alert_review",
+      "build_id": "tcd-proof-public-fixture-build-v0.1",
+      "cfg_fp": "sha256:ba2b8de784ef0607f281d10037018bebf00538dd1c5537cbad8f2f3f3f386ec0",
+      "decision_outcome": "tampered_decision_outcome",
+      "event_id": "evt_synthetic_aml_kyb_001",
+      "evidence_set_ref": "evidence:synthetic:aml-kyb-alert-review:001",
+      "human_review_state": "required",
+      "image_digest": "sha256:400ad637d6ad8e118d97aea228ee22c205a08fe00a715c44e59dd04c83c5177b",
+      "policy_digest": "sha256:4c36cbca9fda05a817609311992e999f1a067850a89faefc7fab7dda18eb9fd6",
+      "policy_ref": "policy:aml-kyb-alert-review:v1",
+      "scenario_id": "aml_kyb_hold_for_enhanced_due_diligence",
+      "upstream_action_id": "upstream-action-001"
+    },
+    "comp": {
+      "decision_outcome": "tampered_decision_outcome",
+      "decision_ref": "decision:synthetic:aml-kyb-alert-review:001",
+      "redaction": "raw model answer omitted from public fixture"
+    },
+    "e": {
+      "refs": [
+        {
+          "digest": "sha256:7f5530646629c6efbe7f46ecaccc9c2da97e582445a4d3d43dd54c69ee50a3b7",
+          "kind": "synthetic_alert_digest",
+          "redacted": true,
+          "ref": "evidence:synthetic:alert-digest:001"
+        },
+        {
+          "digest": "sha256:4c36cbca9fda05a817609311992e999f1a067850a89faefc7fab7dda18eb9fd6",
+          "kind": "procedure_digest",
+          "redacted": false,
+          "ref": "policy:aml-kyb-alert-review:v1"
+        }
+      ]
+    },
+    "nonce": "synthetic-nonce-aml-kyb-v0-1",
+    "req": {
+      "payload_digest": "sha256:6575a14bb2785a8d226914acba19e4ac76652b8da1bf69abad230817099bb496",
+      "redaction": "raw request omitted from public fixture",
+      "request_ref": "request:synthetic:aml-kyb-alert-review:001"
+    },
+    "schema": "tcd.receipt.profile.v0.1",
+    "ts_ns": 1775000000123456789,
+    "v": 1,
+    "witness": {
+      "restart_safe_reference": "receipt:synthetic:aml-kyb-alert-review:001",
+      "verification_profile": "illustrative_public_pilot_profile"
+    }
+  },
+  "receipt_ref": "receipt:synthetic:aml-kyb-alert-review:001",
+  "runtime_generated": false,
+  "schema": "tcd.receipt.profile.v0.1",
+  "synthetic_data": true
+}

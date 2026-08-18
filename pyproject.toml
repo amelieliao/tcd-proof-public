@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tcd-proof-public"
+version = "0.1.0"
+description = "Public verifier and reconciliation tools for TCD Proof demo receipts."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+dependencies = [
+  "cryptography>=42",
+  "jsonschema>=4.18,<5",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8",
+]
+
+[project.scripts]
+tcd-verifier = "tcd_verifier.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "demos/aml_kyb_alert_review/tests"]
+addopts = "-q"

@@ -1,0 +1,259 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tcdproof.com/schemas/tcd-receipt-profile-v0.1.schema.json",
+  "title": "TCD Receipt Profile v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "profile",
+    "profile_version",
+    "runtime_generated",
+    "synthetic_data",
+    "claim_status",
+    "receipt_ref",
+    "receipt_body"
+  ],
+  "properties": {
+    "schema": {
+      "const": "tcd.receipt.profile.v0.1"
+    },
+    "profile": {
+      "const": "illustrative_public_pilot_profile"
+    },
+    "profile_version": {
+      "const": "0.1"
+    },
+    "runtime_generated": {
+      "const": false
+    },
+    "synthetic_data": {
+      "const": true
+    },
+    "claim_status": {
+      "const": "illustrative_verifier_test_vector"
+    },
+    "receipt_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "receipt_body": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "v",
+        "schema",
+        "ts_ns",
+        "nonce",
+        "attestor",
+        "claims",
+        "auth_sig"
+      ],
+      "properties": {
+        "v": {
+          "type": "integer"
+        },
+        "schema": {
+          "const": "tcd.receipt.profile.v0.1"
+        },
+        "ts_ns": {
+          "type": "integer"
+        },
+        "nonce": {
+          "type": "string",
+          "minLength": 1
+        },
+        "attestor": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "id"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "profile": {
+              "const": "illustrative_public_pilot_profile"
+            }
+          }
+        },
+        "claims": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "event_id",
+            "upstream_action_id",
+            "scenario_id",
+            "policy_ref",
+            "policy_digest",
+            "build_id",
+            "image_digest",
+            "cfg_fp"
+          ],
+          "properties": {
+            "event_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "upstream_action_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "scenario_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "action_type": {
+              "type": "string"
+            },
+            "decision_outcome": {
+              "type": "string"
+            },
+            "human_review_state": {
+              "type": "string"
+            },
+            "policy_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "policy_digest": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "build_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "image_digest": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "cfg_fp": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "evidence_set_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "req": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "request_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "payload_digest": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "redaction": {
+              "type": "string"
+            }
+          }
+        },
+        "comp": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "decision_ref": {
+              "type": "string",
+              "minLength": 1
+            },
+            "decision_outcome": {
+              "type": "string"
+            },
+            "redaction": {
+              "type": "string"
+            }
+          }
+        },
+        "e": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "refs": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "kind",
+                  "ref",
+                  "digest",
+                  "redacted"
+                ],
+                "properties": {
+                  "kind": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "ref": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "digest": {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                  },
+                  "redacted": {
+                    "type": "boolean"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "witness": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "verification_profile": {
+              "const": "illustrative_public_pilot_profile"
+            },
+            "restart_safe_reference": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "extensions": {
+          "type": "object"
+        },
+        "auth_sig": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "alg",
+            "key_id",
+            "public_key_fingerprint",
+            "val"
+          ],
+          "properties": {
+            "alg": {
+              "type": "string",
+              "minLength": 1
+            },
+            "key_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "public_key_fingerprint": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "val": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

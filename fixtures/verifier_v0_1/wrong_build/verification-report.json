@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "algorithm": true,
+    "build_binding": false,
+    "config_binding": null,
+    "image_binding": null,
+    "key_id": true,
+    "policy_binding": true,
+    "profile": true,
+    "public_key_fingerprint": true,
+    "schema": true,
+    "signature": true
+  },
+  "details": {},
+  "failure_code": "BUILD_BINDING_MISMATCH",
+  "message": "build_id binding mismatch",
+  "ok": false
+}

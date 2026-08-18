@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "schema": false
+  },
+  "details": {
+    "missing": [
+      "receipt_body.claims.policy_ref"
+    ]
+  },
+  "failure_code": "REQUIRED_FIELD_MISSING",
+  "message": "receipt is missing required field(s)",
+  "ok": false
+}

@@ -1,0 +1,176 @@
+{
+  "canonicalization": {
+    "allow_nan": false,
+    "ensure_ascii": false,
+    "separators": [
+      ",",
+      ":"
+    ],
+    "signed_body_excludes": [
+      "receipt_body.auth_sig"
+    ],
+    "sort_keys": true,
+    "utf8": true
+  },
+  "cases": [
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/valid/expected-bindings.json",
+      "expected_failure_code": null,
+      "expected_ok": true,
+      "name": "valid",
+      "public_key": "fixtures/verifier_v0_1/valid/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/valid/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/valid/verification-report.json"
+    },
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/tampered_receipt/expected-bindings.json",
+      "expected_failure_code": "SIGNATURE_INVALID",
+      "expected_ok": false,
+      "name": "tampered_receipt",
+      "public_key": "fixtures/verifier_v0_1/tampered_receipt/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/tampered_receipt/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/tampered_receipt/verification-report.json"
+    },
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/wrong_policy/expected-bindings.json",
+      "expected_failure_code": "POLICY_BINDING_MISMATCH",
+      "expected_ok": false,
+      "name": "wrong_policy",
+      "public_key": "fixtures/verifier_v0_1/wrong_policy/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/wrong_policy/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/wrong_policy/verification-report.json"
+    },
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/wrong_build/expected-bindings.json",
+      "expected_failure_code": "BUILD_BINDING_MISMATCH",
+      "expected_ok": false,
+      "name": "wrong_build",
+      "public_key": "fixtures/verifier_v0_1/wrong_build/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/wrong_build/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/wrong_build/verification-report.json"
+    },
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/missing_required_field/expected-bindings.json",
+      "expected_failure_code": "REQUIRED_FIELD_MISSING",
+      "expected_ok": false,
+      "name": "missing_required_field",
+      "public_key": "fixtures/verifier_v0_1/missing_required_field/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/missing_required_field/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/missing_required_field/verification-report.json"
+    },
+    {
+      "expected_bindings": "fixtures/verifier_v0_1/unsupported_algorithm/expected-bindings.json",
+      "expected_failure_code": "UNSUPPORTED_ALGORITHM",
+      "expected_ok": false,
+      "name": "unsupported_algorithm",
+      "public_key": "fixtures/verifier_v0_1/unsupported_algorithm/public-key.pem",
+      "receipt": "fixtures/verifier_v0_1/unsupported_algorithm/receipt.json",
+      "verification_report": "fixtures/verifier_v0_1/unsupported_algorithm/verification-report.json"
+    }
+  ],
+  "claim_status": "illustrative_verifier_test_vector",
+  "entries": [
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/receipt.json",
+      "sha256": "581d040711bb71a02422e0f53b5bf1d9787da226252e34f6320ab813d0f66f65"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/verification-report.json",
+      "sha256": "b2d4db66343eaab9c17bf552199f4b72e1a2f6d0b8e7a8de17670113cfcae2bb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/receipt.json",
+      "sha256": "6de140a64aa0e02ba37529d218075e578d688c536416f3d6cbbd8f9e412d88fb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/verification-report.json",
+      "sha256": "cc96ca0ef1fddc5acdb89a214d26ee5c0b500c6b78fef5627f1c0c1249fcf33a"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/receipt.json",
+      "sha256": "dd9f6475f4eb9f0269a3b163ab4d3c8eeee855826634bda9c632bde2bbb8c5f1"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/verification-report.json",
+      "sha256": "dac481b5bd5857cccdfcfe6c41c6bf18388a731e6c9ddc3c7fcfa99af92ea78f"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/verification-report.json",
+      "sha256": "46dc82332d0a6572fc5f53287607558cad55d6c4a5e01bff829e389fc5ece18c"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/expected-bindings.json",
+      "sha256": "cab3c6fcda3de92381a894a3bdd44943ecca634cef16c5a6af0704b83bde8896"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/verification-report.json",
+      "sha256": "53a256e7fa42c971b6ae69c6aa9cd6dca4b4c86f7cb2320efda8eca00345d17c"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/expected-bindings.json",
+      "sha256": "cb2ff28601320786f6ce9b8b2428564d8d2e292cf8f1209546fca13db7bce6de"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/verification-report.json",
+      "sha256": "5941bb1694e4446d45844657fd3ea300ccd29fb1f07ed3f42fbb43c0c84a70d1"
+    }
+  ],
+  "profile": "illustrative_public_pilot_profile",
+  "profile_version": "0.1",
+  "runtime_generated": false,
+  "schema": "tcd.test-vector-manifest.v0.1",
+  "signature_algorithm": "Ed25519",
+  "synthetic_data": true
+}

@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "algorithm": true,
+    "build_binding": null,
+    "config_binding": null,
+    "image_binding": null,
+    "key_id": true,
+    "policy_binding": false,
+    "profile": true,
+    "public_key_fingerprint": true,
+    "schema": true,
+    "signature": true
+  },
+  "details": {},
+  "failure_code": "POLICY_BINDING_MISMATCH",
+  "message": "policy_ref binding mismatch",
+  "ok": false
+}

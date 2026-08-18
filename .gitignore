@@ -9,6 +9,11 @@
 *.secrets
 *.key
 *.pem
+!fixtures/verifier_v0_1/**/public-key.pem
+private-key.pem
+ed25519-private-key.pem
+*.private.pem
+*.private.key
 *.p12
 *.pfx
 *.crt

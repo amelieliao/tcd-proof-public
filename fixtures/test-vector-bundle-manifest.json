@@ -1,0 +1,190 @@
+{
+  "claim_status": "illustrative_verifier_test_vector",
+  "entries": [
+    {
+      "path": "fixtures/reconciliation/complete/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/complete/receipt-index.json",
+      "sha256": "ea721a3822adbf814ba86f8aadff1e0325179755dfb1995b7f0de4f5ce05408c"
+    },
+    {
+      "path": "fixtures/reconciliation/complete/verification-results.json",
+      "sha256": "c98e550608de741aa9143697f847e27ef8dfa40ad9b03a97774c03cad17e7e73"
+    },
+    {
+      "path": "fixtures/reconciliation/duplicate-receipt/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/duplicate-receipt/receipt-index.json",
+      "sha256": "7d520a888e2016c239d396ef427d631fca6890bf27f6b88cbfd7c2bfb7c4b841"
+    },
+    {
+      "path": "fixtures/reconciliation/duplicate-receipt/verification-results.json",
+      "sha256": "b589b0410952483a3e1770fd075e4314b7efcbbacc9e10732fce5d740000717f"
+    },
+    {
+      "path": "fixtures/reconciliation/missing-receipt/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/missing-receipt/receipt-index.json",
+      "sha256": "bbd06cbd5e4f192612527a9330fcc9a0622fdb619b16d0d4dba838884d3b632c"
+    },
+    {
+      "path": "fixtures/reconciliation/missing-receipt/verification-results.json",
+      "sha256": "4a58289fdb54c14f39945fc6253a1f39780d2144380dbdd3a0b5fec7383da08a"
+    },
+    {
+      "path": "fixtures/reconciliation/orphan-receipt/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/orphan-receipt/receipt-index.json",
+      "sha256": "ddb7a5b534bc87266a05ebb47563dec867a46886fecfb8ef3a4b812687cc4e4e"
+    },
+    {
+      "path": "fixtures/reconciliation/orphan-receipt/verification-results.json",
+      "sha256": "aba0fb6b8c0e50a2ec94839703622897a6a48af7d6b792d290515061bd06a691"
+    },
+    {
+      "path": "fixtures/reconciliation/uncommitted-receipt/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/uncommitted-receipt/receipt-index.json",
+      "sha256": "9849ddedcdb71f1e6b18e3b3fa7a5dc2ddcdd7edc056e6e517fb5ac8744e73e9"
+    },
+    {
+      "path": "fixtures/reconciliation/uncommitted-receipt/verification-results.json",
+      "sha256": "4a58289fdb54c14f39945fc6253a1f39780d2144380dbdd3a0b5fec7383da08a"
+    },
+    {
+      "path": "fixtures/reconciliation/verification-failure/eligible-actions.json",
+      "sha256": "3503f1364ca0ac79880a475ab7452fe721777f1c3da6380572e478aed355b5df"
+    },
+    {
+      "path": "fixtures/reconciliation/verification-failure/receipt-index.json",
+      "sha256": "ea721a3822adbf814ba86f8aadff1e0325179755dfb1995b7f0de4f5ce05408c"
+    },
+    {
+      "path": "fixtures/reconciliation/verification-failure/verification-results.json",
+      "sha256": "89bcbe84a7ac16c2f015ae5f1fa1bea28066b8ef19713e30f1605e4027cde398"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/receipt.json",
+      "sha256": "581d040711bb71a02422e0f53b5bf1d9787da226252e34f6320ab813d0f66f65"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/missing_required_field/verification-report.json",
+      "sha256": "b2d4db66343eaab9c17bf552199f4b72e1a2f6d0b8e7a8de17670113cfcae2bb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/receipt.json",
+      "sha256": "6de140a64aa0e02ba37529d218075e578d688c536416f3d6cbbd8f9e412d88fb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/tampered_receipt/verification-report.json",
+      "sha256": "cc96ca0ef1fddc5acdb89a214d26ee5c0b500c6b78fef5627f1c0c1249fcf33a"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/test-vector-manifest.json",
+      "sha256": "e4a6feba9f278f5e09226b65b894fa4c41ccb47f501c8f568ac84326be6952a4"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/receipt.json",
+      "sha256": "dd9f6475f4eb9f0269a3b163ab4d3c8eeee855826634bda9c632bde2bbb8c5f1"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/unsupported_algorithm/verification-report.json",
+      "sha256": "dac481b5bd5857cccdfcfe6c41c6bf18388a731e6c9ddc3c7fcfa99af92ea78f"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/expected-bindings.json",
+      "sha256": "06114e8b97c3c7773871f9cccf8ce5db23e512e54852cfbe2e8f4c6041491ff0"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/valid/verification-report.json",
+      "sha256": "46dc82332d0a6572fc5f53287607558cad55d6c4a5e01bff829e389fc5ece18c"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/expected-bindings.json",
+      "sha256": "cab3c6fcda3de92381a894a3bdd44943ecca634cef16c5a6af0704b83bde8896"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_build/verification-report.json",
+      "sha256": "53a256e7fa42c971b6ae69c6aa9cd6dca4b4c86f7cb2320efda8eca00345d17c"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/expected-bindings.json",
+      "sha256": "cb2ff28601320786f6ce9b8b2428564d8d2e292cf8f1209546fca13db7bce6de"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/public-key.pem",
+      "sha256": "43a65a513998b4c4abd9d4ff2c6870a09544750d64862c5bc3cd340de8d390cb"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/receipt.json",
+      "sha256": "ad15e9412b22a95b6fd3d2388f6978cdd2485bff4f95406183d243c944bae70d"
+    },
+    {
+      "path": "fixtures/verifier_v0_1/wrong_policy/verification-report.json",
+      "sha256": "5941bb1694e4446d45844657fd3ea300ccd29fb1f07ed3f42fbb43c0c84a70d1"
+    },
+    {
+      "path": "schemas/tcd-receipt-profile-v0.1.schema.json",
+      "sha256": "f140193d6c5089d22876050926b2d6c7466b38bf6e91c664ebc59d8ee96382db"
+    },
+    {
+      "path": "specs/tcd-receipt-profile-v0.1.md",
+      "sha256": "b1d78c869134e02505350005b2232a93ac3ae3158b74d21059a6a7b460e70a28"
+    }
+  ],
+  "profile": "illustrative_public_pilot_profile",
+  "profile_version": "0.1",
+  "runtime_generated": false,
+  "schema": "tcd.test-vector-bundle-manifest.v0.1",
+  "synthetic_data": true
+}

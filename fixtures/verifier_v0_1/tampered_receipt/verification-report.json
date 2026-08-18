@@ -1,0 +1,18 @@
+{
+  "checks": {
+    "algorithm": true,
+    "build_binding": null,
+    "config_binding": null,
+    "image_binding": null,
+    "key_id": true,
+    "policy_binding": null,
+    "profile": true,
+    "public_key_fingerprint": true,
+    "schema": true,
+    "signature": false
+  },
+  "details": {},
+  "failure_code": "SIGNATURE_INVALID",
+  "message": "Ed25519 signature verification failed",
+  "ok": false
+}

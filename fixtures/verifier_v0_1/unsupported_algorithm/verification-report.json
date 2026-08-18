@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "algorithm": false,
+    "build_binding": null,
+    "config_binding": null,
+    "image_binding": null,
+    "key_id": null,
+    "policy_binding": null,
+    "profile": true,
+    "public_key_fingerprint": null,
+    "schema": true,
+    "signature": null
+  },
+  "details": {
+    "algorithm": "HMAC-SHA256"
+  },
+  "failure_code": "UNSUPPORTED_ALGORITHM",
+  "message": "unsupported authenticity signature algorithm",
+  "ok": false
+}

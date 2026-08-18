@@ -48,8 +48,8 @@ def test_validator_rejects_sensitive_public_export_fixtures(tmp_path: Path) -> N
         ("bad.sqlite", b"sqlite bytes"),
         ("bad.log", b"log bytes"),
         ("env.sh", "export TOKEN=bad\n"),
-        ("bad-raw-prompt.json", {"raw_prompt": "summarize this case"}),
-        ("bad-raw-completion.json", {"raw_completion": "model answer"}),
+        ("bad-raw-prompt.json", {"raw_prompt": "unsafe_test_value"}),
+        ("bad-raw-completion.json", {"raw_completion": "unsafe_test_value"}),
         ("bad-secret-token.json", {"secret_token": "secret-like-token-1234567890"}),
     ]
     for index, (relative, content) in enumerate(bad_cases):

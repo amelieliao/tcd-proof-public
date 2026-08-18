@@ -1,0 +1,28 @@
+{
+  "checks": {
+    "algorithm": true,
+    "build_binding": true,
+    "config_binding": true,
+    "image_binding": true,
+    "key_id": true,
+    "policy_binding": true,
+    "profile": true,
+    "public_key_fingerprint": true,
+    "schema": true,
+    "signature": true
+  },
+  "details": {
+    "event_id": "evt_synthetic_aml_kyb_001",
+    "key_id": "tcd-public-pilot-ed25519-2026-08",
+    "profile": "illustrative_public_pilot_profile",
+    "profile_version": "0.1",
+    "public_key_fingerprint": "sha256:ecc9d6481ff4809459d936a9f505a569ac78906512f60b5e7714a7cb1cc04e7e",
+    "receipt_ref": "receipt:synthetic:aml-kyb-alert-review:001",
+    "scenario_id": "aml_kyb_hold_for_enhanced_due_diligence",
+    "signature_algorithm": "Ed25519",
+    "upstream_action_id": "upstream-action-001"
+  },
+  "failure_code": null,
+  "message": "receipt verified",
+  "ok": true
+}
