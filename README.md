@@ -19,6 +19,14 @@ Buyer-facing demo index:
 - [Customer discovery one-pager](docs/customer-discovery-one-pager.md)
 - [AML/KYB alert review demo](demos/aml_kyb_alert_review/)
 
+Pilot assurance materials:
+
+- [AML/KYB Action Assurance Profile v0.1](specs/aml-kyb-action-assurance-profile-v0.1.md)
+- [OSFI E-23 & Customer Assurance Mapping](docs/osfi-e23-customer-assurance-mapping.md)
+- [Pilot Acceptance Scorecard](docs/pilot-acceptance-scorecard.md)
+
+Draft/pilot materials for scoping, reviewer evidence mapping, and acceptance measurement; they support evidence review and do not claim regulatory compliance.
+
 ## 1. Run The Public Ed25519 Verifier
 
 The public verifier is a clean-room Python verifier for `illustrative_public_pilot_profile` fixtures. It recomputes canonical signed bytes, verifies the Ed25519 signature, checks key ID and public-key fingerprint, and compares policy, build, image, and config bindings against expected values.
