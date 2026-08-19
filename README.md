@@ -190,8 +190,11 @@ tcd-proof-public/
     full-chain-receipt-quickstart.md
     receipt-and-evidence-model.md
     architecture-notes.md
+    osfi-e23-customer-assurance-mapping.md
+    pilot-acceptance-scorecard.md
   specs/
     tcd-receipt-profile-v0.1.md
+    aml-kyb-action-assurance-profile-v0.1.md
   schemas/
     tcd-receipt-profile-v0.1.schema.json
   src/tcd_verifier/
